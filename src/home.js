@@ -15,7 +15,7 @@ export default function Home() {
     .then(data => {
       console.log(data);
       console.log('success');
-if data{
+if (data){
 const _inputData = data.products.map((rowData)=> ({
   name: rowData[1],
   title: rowData[2],
