@@ -14,6 +14,7 @@ export default function Home() {
     .then(res => res.json())
     .then(data => {
       console.log(data);
+      console.log(data[0]);
       console.log('success');
 const _inputData = data.map((rowData)=> ({
   name: rowData[1],
