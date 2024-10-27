@@ -10,7 +10,7 @@ export default function Home() {
     content:'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   }])
   const makedbreadable = async() => {
-    fetch(`${process.env.REACT_APP_API}/read`,{method: "GET"})
+    fetch(`${process.env.REACT_APP_API}/api/users/read`,{method: "GET"})
     .then(res => res.json())
     .then(data => {
       console.log(data);
