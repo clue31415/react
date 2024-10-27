@@ -20,6 +20,8 @@ const _inputData = data.map((rowData)=> ({
   title: rowData[2],
   content: rowData[3]
 }))
+      console.log(_inputData);
+      console.log('inputdata')
 setInputData(inputData.concat(_inputData))
 })
 .catch(rejected => {
