@@ -15,11 +15,13 @@ export default function Home() {
     .then(data => {
       console.log(data);
       console.log('success');
+if data{
 const _inputData = data.products.map((rowData)=> ({
   name: rowData[1],
   title: rowData[2],
   content: rowData[3]
 }))
+}
 setInputData(inputData.concat(_inputData))
 })
 .catch(rejected => {
