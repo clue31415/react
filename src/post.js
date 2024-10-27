@@ -13,7 +13,7 @@ export default function Post() {
       content:''
     }])
     const makedbreadable = async() => {
-      fetch(`${process.env.REACT_APP_API}/read`,{method: "POST"})
+      fetch(`${process.env.REACT_APP_API}/api/users/read`,{method: "POST"})
       .then(res => res.json())
       .then(data => {
         console.log(data);
