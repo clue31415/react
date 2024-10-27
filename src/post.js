@@ -8,19 +8,17 @@ export default function Post() {
     let location = useLocation();
     let search = Number(location.search.substr(1));
     const [inputData, setInputData]=useState([{
-      idpost:'',
       name:'',
       title:'',
       content:''
     }])
     const makedbreadable = async() => {
-      fetch("http://172.30.1.21:3010/read",{method: "POST"})
+      fetch(`${process.env.REACT_APP_API}/read`,{method: "POST"})
       .then(res => res.json())
       .then(data => {
         console.log(data);
         console.log('success')
   const _inputData = data.products.map((rowData)=> ({
-    idpost: rowData.idpost,
     name: rowData.username,
     title: rowData.title,
     content: rowData.content

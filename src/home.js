@@ -5,19 +5,17 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const [inputData, setInputData]=useState([{
-    idpost:'0',
     name:'관리자',
     title:'첫글',
     content:'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   }])
   const makedbreadable = async() => {
-    fetch("http://172.30.1.21:3010/read",{method: "POST"})
+    fetch(`${process.env.REACT_APP_API}/read`,{method: "GET"})
     .then(res => res.json())
     .then(data => {
       console.log(data);
       console.log('success')
 const _inputData = data.products.map((rowData)=> ({
-  idpost: rowData.idpost,
   name: rowData.name,
   title: rowData.title,
   content: rowData.content
