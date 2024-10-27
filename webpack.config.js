@@ -7,11 +7,11 @@ module.exports = {
     output: {
         path: __dirname + "/public/", // or path: path.join(__dirname, "dist/js"),
         filename: "bundle.js",
-        publicPath: '/'
+        //publicPath: '/'
     },
 
 resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
 },
 
 module: {
