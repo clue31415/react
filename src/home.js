@@ -17,9 +17,9 @@ export default function Home() {
       console.log(data[0].name);
       console.log('success');
 const _inputData = data.map((rowData)=> ({
-  name: rowData[1],
-  title: rowData[2],
-  content: rowData[3]
+  name: rowData.name,
+  title: rowData.title,
+  content: rowData.content
 }))
       console.log(_inputData);
       console.log('inputdata')
