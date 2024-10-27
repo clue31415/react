@@ -37,7 +37,7 @@ export default function Write() {
             <br></br>
             <button className="button-design1" onClick={() => {
         const userData = [title, content, name, pw];
-        fetch(`${process.env.REACT_APP_API}/upload`, { //auth 주소에서 받을 예정
+        fetch(`${process.env.REACT_APP_API}/api/users/upload`, { //auth 주소에서 받을 예정
           method: "POST", // method :통신방법
           headers: {      // headers: API 응답에 대한 정보를 담음
             "content-type": "application/json",
