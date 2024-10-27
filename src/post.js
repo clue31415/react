@@ -13,13 +13,13 @@ export default function Post() {
       content:''
     }])
     const makedbreadable = async() => {
-      fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "POST"})
+      fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
       .then(res => res.json())
       .then(data => {
         console.log(data);
         console.log('success')
-  const _inputData = data.products.map((rowData)=> ({
-    name: rowData.username,
+  const _inputData = data.map((rowData)=> ({
+    name: rowData.name,
     title: rowData.title,
     content: rowData.content
   }))
