@@ -14,11 +14,11 @@ export default function Home() {
     .then(res => res.json())
     .then(data => {
       console.log(data);
-      console.log('success')
+      console.log('success');
 const _inputData = data.products.map((rowData)=> ({
-  name: rowData.name,
-  title: rowData.title,
-  content: rowData.content
+  name: rowData[1],
+  title: rowData[2],
+  content: rowData[3]
 }))
 setInputData(inputData.concat(_inputData))
 })
