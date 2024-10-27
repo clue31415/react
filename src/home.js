@@ -45,7 +45,7 @@ console.log(post_title);
       <h1>글 쓰기</h1>
       </Link>
       <div>
-        {post_title.map((a, b) => {
+        {post_title && post_title.map((a, b) => {
           return (
             <h4>
               <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(b))}>{post_title[b]}</Link>
