@@ -1,14 +1,36 @@
 {
+  "scripts": {
+    "build": "webpack"
+  },
   "name": "opgc",
   "version": "1.0.0",
-  "homepage":".",
+  "homepage": ".",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "es2015": "^0.0.0",
+    "file-loader": "^6.2.0",
+    "json-loader": "^0.5.7",
+    "jsx-loader": "^0.13.2",
+    "loader": "^2.1.1",
+    "loaders": "^1.1.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hot-loader": "^4.13.1",
     "react-router-dom": "^6.27.0",
     "react-scripts": "^5.0.1",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
     "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
