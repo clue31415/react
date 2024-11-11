@@ -33,9 +33,9 @@ useEffect(() =>{
 makedbreadable();
 },[])
 
-const post_title = inputData.map(function (value, index, array) {
+const post_title = inputData.reverse().map(function (value, index, array) {
   return value.title;
-}).reverse();
+});
 console.log(post_title);
   let [good, changegood] = useState(0);
   return (
