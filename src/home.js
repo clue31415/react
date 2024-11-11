@@ -51,7 +51,7 @@ console.log(post_title);
         {post_title && post_title.map((a, b) => {
           return (
             <h4>
-              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(post_title.length-b))}>{post_title[b]}</Link>
+              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(post_title.length-b-1))}>{post_title[b]}</Link>
               <span
                 onClick={() => {
                   changegood(good + 1);
