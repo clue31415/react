@@ -37,6 +37,7 @@ export default function Write() {
             <br></br>
             <button className="button-design1" onClick={() => {
         const userData = [title, content, name, pw];
+        const navigate = useNavigate();
         fetch(`${process.env.REACT_APP_API}api/users/upload`, { //auth 주소에서 받을 예정
           method: "POST", // method :통신방법
           headers: {      // headers: API 응답에 대한 정보를 담음
@@ -47,6 +48,7 @@ export default function Write() {
           .then((res) => res.json())
           .then((json) => {
           });
+        navigate('/');
             }
             }>완료</button>
             <div className="blank">
