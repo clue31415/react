@@ -13,9 +13,6 @@ export default function Home() {
     fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
     .then(res => res.json())
     .then(data => {
-      console.log(data);
-      console.log(data[0].name);
-      console.log('success');
 const _inputData = data.map((rowData)=> ({
   name: rowData.name,
   title: rowData.title,
@@ -33,9 +30,7 @@ setInputData(inputData.concat(revinputdata))
 useEffect(() =>{
 makedbreadable();
 },[])
-console.log("inputdata");
-console.log(inputData);
-  let [page, changepage] = useState(1);
+let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
 }).slice(10*(page-1)+1,10*page+1);
