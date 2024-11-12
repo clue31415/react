@@ -65,7 +65,7 @@ console.log(post_title);
           );
         })}
       </div>
-          <button onClick={()=>{if (page>0){ changepage(page + -1);}}>a</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}>a</button>
+          <button onClick={()=>{if (page>0){ changepage(page + -1);}}}>left</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>right</button>
     </div>
   );
 }
