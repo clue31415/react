@@ -23,7 +23,7 @@ const _inputData = data.map((rowData)=> ({
 }))
       console.log(_inputData);
       console.log('inputdata')
-setInputData(inputData.concat(_inputData))
+setInputData(inputData.concat(_inputData).reverse())
 })
 .catch(rejected => {
   console.log(rejected);
@@ -36,9 +36,9 @@ console.log("inputdata");
 console.log(inputData);
   let [good, changegood] = useState(0);
   let [page, changepage] = useState(1);
-const post_title = inputData.reverse().map(function (value, index, array) {
+const post_title = inputData.map(function (value, index, array) {
   return value.title;
-}).slice(10*(page-1),10*page);
+}).slice(20*(page-1),20*page);
 console.log(post_title);
   return (
     <div className="App">
