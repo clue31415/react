@@ -21,9 +21,10 @@ const _inputData = data.map((rowData)=> ({
   title: rowData.title,
   content: rowData.content
 }))
+const revinputdata=[..._inputData].reverse()
       console.log(_inputData);
       console.log('inputdata')
-setInputData(inputData.concat(_inputData))
+setInputData(inputData.concat(revinputdata))
 })
 .catch(rejected => {
   console.log(rejected);
