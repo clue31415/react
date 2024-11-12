@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ibuki from "./cuteibuki.png";
+import okpogocircle from "./okpogocircle.png";
 import "./App.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -39,11 +39,11 @@ console.log("b4start",inputData);
     return (
       <div className="App">
         <div className="op-title">
-          <div><Link className={"link-style1"} to={"/"}>이부키 팬클럽</Link></div>
+          <div><Link className={"link-style1"} to={"/"}>옥포고등학교</Link></div>
         </div>
         <h1>{inputData[search]?.title}</h1>
         <h4>{inputData[search]?.name}</h4>
-        <img src={ibuki} className="op-post-img" />
+        <img src={okpogocircle} className="op-post-img" />
         <h4>{inputData[search]?.content}</h4>
       </div>
     );
