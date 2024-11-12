@@ -43,6 +43,10 @@
   margin: 20px;
 }
 
+.p-margin {
+  margin-bottom: 40px;
+}
+
 .link-style1 {
   text-decoration: none;
   color: white;
