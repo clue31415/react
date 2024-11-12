@@ -32,13 +32,15 @@ setInputData(inputData.concat(_inputData))
 useEffect(() =>{
 makedbreadable();
 },[])
-
+console.log("inputdata");
+console.log(inputData);
 const post_title = inputData.reverse().map(function (value, index, array) {
   return value.title;
 });
 console.log(post_title);
   let [good, changegood] = useState(0);
   let [page, changepage] = useState(1);
+  post_title=post_title.slice(10*(page-1),10*page)
   return (
     <div className="App">
       <div className="op-title">
@@ -65,7 +67,7 @@ console.log(post_title);
           );
         })}
       </div>
-          <button onClick={()=>{if (page>0){ changepage(page + -1);}}}>left</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>right</button>
+          <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>left</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>right</button>
     </div>
   );
 }
