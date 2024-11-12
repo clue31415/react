@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ibuki from "./cuteibuki.png";
 import "./App.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
@@ -26,7 +25,7 @@ export default function Write() {
     return (
         <div className="App">
         <div className="op-title">
-        <div><Link className={"link-style1"} to={"/"}>이부키 팬클럽</Link></div>
+        <div><Link className={"link-style1"} to={"/"}>거제옥포고등학교</Link></div>
         </div>
         <div className="op-write">
             <h1>글 작성</h1>
@@ -41,7 +40,7 @@ export default function Write() {
                 changecontent(e.target.value);
             }} />
             </div>
-            <p>이름</p>
+            <p>학번</p>
             <input type="text" spellcheck="false" value={name} onChange={(e) =>{
                 changename(e.target.value);
             }} />
