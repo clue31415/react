@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const [inputData, setInputData]=useState([{
-
+    name:'관리자',
+    title:'첫글',
+    content:'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
   }])
   const makedbreadable = async() => {
     fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
@@ -37,7 +39,7 @@ console.log(inputData);
   let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
-}).slice(20*(page-1),20*page);
+}).slice(20*(page-1)+1,20*page+1);
 console.log(post_title);
   return (
     <div className="App">
@@ -52,7 +54,7 @@ console.log(post_title);
         {post_title && post_title.map((a, b) => {
           return (
             <h4>
-              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(post_title.length-b-1))}>{post_title[b]}</Link>
+              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(inputData.length-20*page-b+20))}>{post_title[b]}</Link>
               <span
                 onClick={() => {
                   changegood(good + 1);
