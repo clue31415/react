@@ -44,7 +44,7 @@ console.log(post_title);
   return (
     <div className="App">
       <div className="op-title">
-      <div><Link className={"link-style1"} to={"/"}>옥포고등학교</Link></div>
+      <div><Link className={"link-style1"} to={"/"}>거제옥포고등학교</Link></div>
       </div>
       <Link to="/write">
       <img src={okpogorect} className="op-title-img" />
