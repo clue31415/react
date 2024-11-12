@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   const [inputData, setInputData]=useState([{
-    name:'관리자',
-    title:'첫글',
-    content:'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+
   }])
   const makedbreadable = async() => {
     fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
