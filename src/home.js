@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ibuki from "./ibuki.png";
+import okpogorect from "./okpogorect.png";
 import "./App.css";
 import { Link } from "react-router-dom";
 
@@ -44,10 +44,10 @@ console.log(post_title);
   return (
     <div className="App">
       <div className="op-title">
-      <div><Link className={"link-style1"} to={"/"}>이부키 팬클럽</Link></div>
+      <div><Link className={"link-style1"} to={"/"}>옥포고등학교</Link></div>
       </div>
       <Link to="/write">
-      <img src={ibuki} className="op-title-img" />
+      <img src={okpogorect} className="op-title-img" />
       <h1>글 쓰기</h1>
       </Link>
       <div>
