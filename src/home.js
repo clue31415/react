@@ -34,13 +34,12 @@ makedbreadable();
 },[])
 console.log("inputdata");
 console.log(inputData);
-const post_title = inputData.reverse().map(function (value, index, array) {
-  return value.title;
-});
-console.log(post_title);
   let [good, changegood] = useState(0);
   let [page, changepage] = useState(1);
-  post_title=post_title.slice(10*(page-1),10*page)
+const post_title = inputData.reverse().map(function (value, index, array) {
+  return value.title;
+}).slice(10*(page-1),10*page);
+console.log(post_title);
   return (
     <div className="App">
       <div className="op-title">
