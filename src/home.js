@@ -35,7 +35,6 @@ makedbreadable();
 },[])
 console.log("inputdata");
 console.log(inputData);
-  let [good, changegood] = useState(0);
   let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
@@ -55,19 +54,12 @@ console.log(post_title);
           return (
             <h4>
               <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(inputData.length-10*page-b+9))}>{post_title[b]}</Link>
-              <span
-                onClick={() => {
-                  changegood(good + 1);
-                }}
-              >
-                ❤
-              </span>
-              {good}
             </h4>
           );
         })}
       </div>
           <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>&lt;</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>&gt;</button>
+      <div>&nbsp</div>
     </div>
   );
 }
