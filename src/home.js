@@ -38,6 +38,7 @@ const post_title = inputData.reverse().map(function (value, index, array) {
 });
 console.log(post_title);
   let [good, changegood] = useState(0);
+  let [page, changepage] = useState(1);
   return (
     <div className="App">
       <div className="op-title">
@@ -64,6 +65,7 @@ console.log(post_title);
           );
         })}
       </div>
+          
     </div>
   );
 }
