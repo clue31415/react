@@ -39,7 +39,7 @@ console.log(inputData);
   let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
-}).slice(20*(page-1)+1,20*page+1);
+}).slice(10*(page-1)+1,10*page+1);
 console.log(post_title);
   return (
     <div className="App">
@@ -54,7 +54,7 @@ console.log(post_title);
         {post_title && post_title.map((a, b) => {
           return (
             <h4>
-              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(inputData.length-20*page-b+19))}>{post_title[b]}</Link>
+              <Link className={"link-style2"} to={"/post?" + parseFloat(parseInt(inputData.length-10*page-b+9))}>{post_title[b]}</Link>
               <span
                 onClick={() => {
                   changegood(good + 1);
@@ -67,7 +67,7 @@ console.log(post_title);
           );
         })}
       </div>
-          <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>left</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>right</button>
+          <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>&lt;</button>{page}<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>&gt;</button>
     </div>
   );
 }
