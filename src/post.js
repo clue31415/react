@@ -8,9 +8,9 @@ export default function Post() {
     let location = useLocation();
     let search = Number(location.search.substr(1));
     const [inputData, setInputData]=useState([{
-      name:'',
-      title:'',
-      content:''
+      name:'관리자',
+      title:'!!!공지사항!!!',
+      content:'타인에게 피해가 가지 않도록 건전하게 활동하시길 바랍니다. 이곳은 실명제임을 잊지 마시길 바랍니다.'
     }])
     const makedbreadable = async() => {
       fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
