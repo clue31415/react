@@ -46,7 +46,7 @@ console.log(post_title);
       </Link>
       <div>
         <h4>
-          <Link className={"link-style2"} to={"/post?0"}>{post_title[b]}</Link>
+          <Link className={"link-style2"} to="/post?0">!!!공지사항!!!</Link>
         </h4>
         {post_title && post_title.map((a, b) => {
           return (
