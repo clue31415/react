@@ -33,7 +33,7 @@ makedbreadable();
 let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
-}).slice(10*(page-1),10*page);
+}).slice(10*(page-1)+1,10*page+1);
 console.log(post_title);
   return (
     <div className="App">
@@ -45,6 +45,9 @@ console.log(post_title);
       <h1>글 쓰기</h1>
       </Link>
       <div>
+        <h4>
+          <Link className={"link-style2"} to={"/post?0"}>{post_title[b]}</Link>
+        </h4>
         {post_title && post_title.map((a, b) => {
           return (
             <h4>
