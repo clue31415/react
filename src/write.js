@@ -29,7 +29,7 @@ export default function Write() {
         <div><Link className={"link-style1"} to={"/"}>거제옥포고등학교</Link></div>
         </div>
         <div className="op-write">
-            <h1>글 작성</h1>
+            <h1>글 쓰기</h1>
             
             <p>제목</p>
             <input type="text" spellcheck="false" value={title} onChange={(e) =>{
