@@ -16,16 +16,16 @@ export default function Post() {
       fetch(`${process.env.REACT_APP_API}api/users/read`,{method: "GET"})
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        console.log('success')
+        //console.log(data);
+        //console.log('success')
   const _inputData = data.map((rowData)=> ({
     name: rowData.name,
     title: rowData.title,
     content: rowData.content
   }))
-  console.log("_inputdata is",_inputData[0].name);
+  //console.log("_inputdata is",_inputData[0].name);
   setInputData(inputData.concat(_inputData))
-  console.log('givedata',inputData);
+  //console.log('givedata',inputData);
 })
 .catch(rejected => {
     console.log(rejected);
@@ -35,7 +35,7 @@ useEffect(() =>{
   makedbreadable();
 },[])
 
-console.log("b4start",inputData);
+//console.log("b4start",inputData);
     return (
       <div className="App">
         <div className="op-title">
