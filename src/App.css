@@ -58,23 +58,6 @@
   color: black;
 }
 
-.no-change-link {
-  color: inherit; /* 부모 요소의 색상으로 상속 */
-  text-decoration: none; /* 링크 밑줄 제거 */
-}
-
-.no-change-link:visited {
-  color: inherit; /* 방문한 링크의 색상도 변경되지 않도록 */
-}
-
-.no-change-link:hover {
-  color: inherit; /* 마우스를 올렸을 때 색상 변경 방지 */
-}
-
-.no-change-link:active {
-  color: inherit; /* 클릭할 때 색상 변경 방지 */
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
