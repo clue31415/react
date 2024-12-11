@@ -20,7 +20,7 @@ export default function Write() {
           .then((res) => res.json())
           .then((json) => {
           });
-        location.reload();
+        window.location.reload();
         //navigate('/');
             }
     return (
