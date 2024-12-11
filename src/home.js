@@ -56,7 +56,7 @@ console.log(post_title);
           );
         })}
       </div>
-          <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>&lt;</button>[ {page} ]<button onClick={()=>{if (page<100){ changepage(page + 1);}}}>&gt;</button>
+          <button onClick={()=>{if (page>1){ changepage(page + -1);}}}>&lt;</button>[ {page} ]<button onClick={()=>{if (page<20){ changepage(page + 1);}}}>&gt;</button>
       <p className={"p-margin"}></p>
     </div>
   );
