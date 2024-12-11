@@ -20,7 +20,8 @@ export default function Write() {
           .then((res) => res.json())
           .then((json) => {
           });
-        navigate('/');
+        location.reload();
+        //navigate('/');
             }
     return (
         <div className="App">
