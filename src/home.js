@@ -34,7 +34,7 @@ let [page, changepage] = useState(1);
 const post_title = inputData.map(function (value, index, array) {
   return value.title;
 }).slice(10*(page-1)+1,10*page+1);
-console.log(post_title);
+//console.log(post_title);
   return (
     <div className="App">
       <div className="op-title">
