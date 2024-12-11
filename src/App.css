@@ -33,6 +33,10 @@
   input[type=text] {height: 200px;}
 }
 
+.write-namepw {
+  input[type=text] {width: 150px;}
+}
+
 .blank {
   height: 100px;
 }
