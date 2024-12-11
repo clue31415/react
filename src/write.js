@@ -42,13 +42,17 @@ export default function Write() {
             }} />
             </div>
             <p>학번</p>
+            <div className="write-namepw">
             <input type="text" spellcheck="false" value={name} onChange={(e) =>{
                 changename(e.target.value);
             }} />
+            </div>
             <p>비밀번호</p>
+            <div className="write-namepw">
             <input type="text" spellcheck="false" value={pw} onChange={(e) =>{
                 changepw(e.target.value);
             }} />
+            </div>
             <br></br>
             <button className="button-design1" onClick={uploadpost}>완료</button>
             <div className="blank">
