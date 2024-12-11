@@ -38,7 +38,7 @@ console.log(post_title);
   return (
     <div className="App">
       <div className="op-title">
-      <button onClick={()=>{window.location.replace("/")}} className={"link-style1"}>거제옥포고등학교</button>
+      <Link onClick={()=>{window.location.replace("/")}} className={"link-style1"}>거제옥포고등학교</Link>
       </div>
       <Link className={"link-style2"} to="/write">
       <img src={okpogorect} className="op-title-img" />
