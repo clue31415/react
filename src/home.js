@@ -40,7 +40,7 @@ console.log(post_title);
       <div className="op-title">
       <div><Link className={"link-style1"} to={"/"}>거제옥포고등학교</Link></div>
       </div>
-      <Link className={"link-style1"} to="/write">
+      <Link className={"link-style2"} to="/write">
       <img src={okpogorect} className="op-title-img" />
       <h1>글 쓰기</h1>
       </Link>
