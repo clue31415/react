@@ -52,7 +52,7 @@ export default function Wrlte() {
             }} />
             </div>
             <br></br>
-            <button className="button-design1" onClick={uploadpost}>완료</button>
+            <button className="button-design1" onClick={uploadposl}>완료</button>
             <div className="blank">
                 <br></br>
             </div>
