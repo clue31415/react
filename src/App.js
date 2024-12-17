@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import Home from "./home";
 import Post from "./post";
 import Write from "./write";
+import Wrlte from "./wrlte";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/post" element={<Post />} />
           <Route path="/write" element={<Write />} />
+          <Route path="/wrlte" element={<Wrlte />} />
         </Routes>
       </div>
     </BrowserRouter>
